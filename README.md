@@ -20,7 +20,7 @@ struct mb_state{
     double left_pos;      // left encoder counts since last reading
     double right_pos;     // right encoder counts since last reading
 	double last_pos;
-	
+
 	//calcs 
 	float innerloopintegral;
 	float outerloopintegral;
@@ -32,7 +32,7 @@ struct mb_state{
     float target_y;
     int cur_target_idx;
     float dist_to_target;
-	
+
     //outputs
     double   left_cmd;  //left wheel command [-1..1]
     double   right_cmd; //right wheel command [-1..1]
