@@ -15,19 +15,19 @@ struct mb_state{
     // raw sensor inputs
     float  theta;         // body angle (rad)
     float  phi;           // average wheel angle (rad)
-	double heading;
-	double last_heading;
+    double heading;
+    double last_heading;
     double left_pos;      // left encoder counts since last reading
     double right_pos;     // right encoder counts since last reading
-	double last_pos;
+    double last_pos;
 
-	//calcs 
-	float innerloopintegral;
-	float outerloopintegral;
-	float headingintegral;
-	float headingDeltaPWM;
+    //calcs 
+    float innerloopintegral;
+    float outerloopintegral;
+    float headingintegral;
+    float headingDeltaPWM;
     float headingError;
-	float theta_ref;
+    float theta_ref;
     float target_x;
     float target_y;
     int cur_target_idx;
