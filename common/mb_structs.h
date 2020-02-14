@@ -27,17 +27,10 @@ struct mb_state{
     //outputs
     double   left_cmd;  //left wheel command [-1..1]
     double   right_cmd; //right wheel command [-1..1]
-    float opti_x;
-    float opti_y;
-    float opti_roll;
-    float opti_pitch;
-    float opti_yaw;
 
     //references
     float distance_ref;
     float psi_ref;
-
-    //TODO: Add more variables to this state as needed
 };
 
 typedef struct mb_setpoints mb_setpoints_t;
